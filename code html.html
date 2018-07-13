@@ -1,0 +1,52 @@
+<! DOCTYPE html >
+<html>
+    <head>
+    
+        <meta charset="UTF 8">
+        <meta author="Eric Shu">
+
+        <script>
+            var interval
+            var changing = true
+            function ChangeBGColor(yellow) {
+                var style = document.body.style;
+                if (style.backgroundColor == "green") {
+                    style.backgroundColor = "blue"
+                }
+                else {
+                    style.backgroundColor = "green";
+                }
+            }
+
+            function AlternateColor() {
+                document.body.style.color = "green";
+                interval = setInterval(ChangeBGColor, 500);
+                   changing = false;
+            }
+            else {
+                interval = setInterval(ChangeBGColor, 500);
+                changing = true;
+                }
+            }
+
+        </script>
+    </head>
+
+    <body onload="AlternateColor()"
+        <button onclick="toggleColor()">Toggle Color</button>
+        <div id="clock"</div>
+    </body>
+</html>
+    
+
+
+            
+                
+            
+
+
+                
+                    
+
+
+
